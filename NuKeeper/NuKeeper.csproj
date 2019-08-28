@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <PackAsTool>true</PackAsTool>
@@ -39,5 +39,10 @@
       <Pack>true</Pack>
       <PackagePath>tools\netcoreapp2.1\any\NuGet.exe</PackagePath>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.4" />
+    <PackageReference Update="Microsoft.CodeQuality.Analyzers" Version="2.9.4" />
+    <PackageReference Update="Microsoft.NetCore.Analyzers" Version="2.9.4" />
   </ItemGroup>
 </Project>
